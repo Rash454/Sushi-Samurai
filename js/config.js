@@ -10,11 +10,11 @@ const RESTAURANT_CONFIG = {
 
   currency: "₪",
 
-  whatsappNumber: "972569441910",
+  whatsappNumber: "972528050190",
 
-  phone: "0569441910",
+  phone: "0528050190",
 
-  instagram: "https://instagram.com/emberandbite",
+  instagram: "https://www.instagram.com/sushisamorai?igsi=anl1M2kzODIwc25n",
 
   location: {
     en: "Ramallah, Awad Street, next to Beit Ardi",

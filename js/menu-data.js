@@ -3,6 +3,7 @@
  */
 const MENU_CATEGORIES = [
   { id: "sushi", name: { en: "Sushi", ar: "سوشي" }, icon: "" },
+  { id: "samurai", name: { en: "Samurai Combos", ar: "كومبوهات الساموراي" }, icon: "" },
   { id: "burgers", name: { en: "Burgers", ar: "برغر" }, icon: "" },
   { id: "noodles", name: { en: "Noodles", ar: "نودلز" }, icon: "" },
   { id: "steaks", name: { en: "Steak", ar: "ستيك" }, icon: "" },
@@ -15,140 +16,642 @@ const MENU_CATEGORIES = [
 const MENU_ITEMS = [
   // Sushi
   {
-    id: "classic-burger",
+    id: "Samurai Roll",
     category: "sushi",
     name: {
-      en: "Classic Burger",
-      ar: "برغر كلاسيك"
+      en: "Samurai Roll",
+      ar: "سوشي ساموراي  "
     },
     description: {
-      en: "Angus beef patty, cheddar, lettuce, tomato, and house sauce.",
-      ar: "قطعة لحم أنغوس، جبنة شيدر، خس، طماطم، وصوص المطعم."
+      en: "Raw salmon, shrimp, cucumber, and avocado, topped with spicy salmon and spicy tuna, crispy sweet potato, and jalapeño slices.",
+      ar: "سلمون ني , جمبري , خيار , افوكادو , مغطى بالسلمون الحار والتونا الحارة مع بطاطا حلوة مقرمشة وشرائح هالبينو"
     },
-    price: 29,
+    price: 50,
     image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",
+      "./imges/سوشي سموراي.jpg",
     extras: [
-      {
-        id: "extra-cheese",
-        name: {
-          en: "Extra Cheese",
-          ar: "جبنة إضافية"
-        },
-        price: 4
-      },
-      {
-        id: "extra-patty",
-        name: {
-          en: "Extra Patty",
-          ar: "قطعة لحم إضافية"
-        },
-        price: 12
-      },
-      {
-        id: "bacon",
-        name: {
-          en: "Crispy Bacon",
-          ar: "بيكون مقرمش"
-        },
-        price: 6
-      },
+     
+    ],
+  },
+  {
+    id: "Lion Roll",
+    category: "sushi",
+    name: {
+      en: "Lion Roll",
+      ar: "سوشي ليون رول "
+    },
+    description: {
+      en: "Fried roll stuffed with crispy sweet potato and mozzarella cheese, topped with spicy salmon and tuna seasoning.",
+      ar: "رول مقلي محشو بالبطاطا الحلوة المقلية وجبنة الموزاريلا ومزين بتتبيلة السلمون والتونا الحارة "
+    },
+    price: 40,
+    image:
+      "./imges/سوشي ليون.jpg",
+    extras: [
+     
+    ],
+  },
+
+   {
+    id: "Salmon Lemon Roll",
+    category: "sushi",
+    name: {
+      en: "Salmon Lemon Roll",
+      ar: "سوشي سلمون رول "
+    },
+    description: {
+      en: "Raw salmon, lemon wedges, avocado, and cucumber, topped with slices of salmon and avocado.",
+      ar: "سلمون ني , قطع ليمون , افوكادو , خيار مغطى بشرائح السلمون والافوكادو "
+    },
+    price: 45,
+    image:
+      "./imges/سوشي سالمون.jpg",
+    extras: [
+     
+    ],
+  },
+{
+    id: "California Special Roll",
+    category: "sushi",
+    name: {
+      en: "California Special Roll",
+      ar: "رول كاليفورنيا الخاص "
+    },
+    description: {
+      en: "Tempura salmon, Philadelphia cheese, cucumber, avocado, and tempura, topped with a layer of smoked salmon slices and drizzled with teriyaki sauce.",
+      ar: "افوكادو , جبنة كريمية , كراب , خيار , مغطى بالمايونيز الحار والكافيار"
+    },
+    price: 40,
+    image:
+      "./imges/سوشي كليفورنيا.jpg",
+    extras: [
+     
+    ],
+  },
+ 
+   {
+    id: "Tuna Roll",
+    category: "sushi",
+    name: {
+      en: "Tuna Roll",
+      ar: "رول التونا "
+    },
+    description: {
+      en: "Raw red tuna, cucumber, and avocado, topped with slices of raw salmon.",
+      ar: "تونا حمراء نية , خيار , افوكادو , مغطى بشرائح السلمون الني"
+    },
+    price: 45,
+    image:
+      "./imges/سوشي تونا.jpg",
+    extras: [
+     
+    ],
+  },
+  
+   {
+    id: "Veggie Roll",
+    category: "sushi",
+    name: {
+      en: "Veggie Roll",
+      ar: "سوشي رول الخضار "
+    },
+    description: {
+      en: "Sweet potato, carrots, cucumber, and enoki mushrooms, topped with avocado slices and crispy sweet potato.",
+      ar: "بطاطا حلوة , جزر , خيار , اوشنكوة, مغطى بشرائح الافوكادو والبطاطا الحلوة المقرمشة"
+    },
+    price: 30,
+    image:
+      "./imges/سوشي فجي.jpg",
+    extras: [
+     
+    ],
+  },
+  
+  {
+    id: "Jalapeño Roll ",
+    category: "sushi",
+    name: {
+      en: "Jalapeño Roll ",
+      ar: "هالبينو رول"
+    },
+    description: {
+      en: "Tempura salmon, green onion, and avocado, topped with spicy tuna seasoning, garnished with jalapeño and crispy panko.",
+      ar: "سلمون تمبورا , بصل اخضر , افوكادو , مغطى بتتبيلة التونا الحارة , مزين بالهالبينو والبانكو المقرمش"
+    },
+    price: 40,
+    image:
+      "./imges/هلبينو رول.jpg",
+    extras: [
+     
+    ],
+  },
+
+   {
+    id: "Smokey Salmon Roll",
+    category: "sushi",
+    name: {
+      en: "Smokey Salmon Roll",
+      ar: "رول السالمون المدخن"
+    },
+    description: {
+      en: "Tempura salmon, Philadelphia cheese, cucumber, avocado, and tempura, topped with a layer of smoked salmon slices and drizzled with teriyaki sauce.",
+      ar: "سلمون تمبورا , جبنة فلدلفيا , خيار , افوكادو , تمبورة , مغطى بطبقة من شرائح السلمون المدخن , مزين بصلصة الترياكي"
+    },
+    price: 45,
+    image:
+      "./imges/سلمون مدخن.jpg",
+    extras: [
+     
+    ],
+  },
+   {
+    id: "Chicken Cheese Roll ",
+    category: "sushi",
+    name: {
+      en: "Chicken Cheese Roll  ",
+      ar: "رول الدجاج والجبنة"
+    },
+    description: {
+      en: "Fried salmon, avocado, carrot, cucumber, and green onion, topped with crispy potato.",
+      ar: "دجاج مقلي , بطاطا حلوة , جبنة موزاريلا , رول مقلي بالبانكو"
+    },
+    price: 40,
+    image:
+      "./imges/شكن رولز.jpg",
+    extras: [
+     
+    ],
+  },
+   
+  {
+    id: "Cazy Crab Roll ",
+    category: "sushi",
+    name: {
+      en: "Cazy Crab Roll ",
+      ar: "رول الكراب"
+    },
+    description: {
+      en: "Tempura-fried roll stuffed with potato, avocado, cucumber, and carrot, topped with spicy crab sauce.",
+      ar: "رول مقلي بالتمبورا , محشي بالبطاطا , افوكادو , خيار , جزر , مزين بصلصة الكراب الحارة "
+    },
+    price: 45,
+    image:
+      "./imges/كراب رولز.jpg",
+    extras: [
+     
+    ],
+  },
+
+   {
+    id: "Sun set Roll ",
+    category: "sushi",
+    name: {
+      en: "Sun set Roll  ",
+      ar: "سن ست رول"
+    },
+    description: {
+      en: "Fried salmon, avocado, carrot, cucumber, and green onion, topped with crispy potato.",
+      ar: "سلمون مقلي , افوكادو , جزر , خيار , بصل اخضر , مغطى بالبطاطا المقرمشة  "
+    },
+    price: 40,
+    image:
+      "./imges/سن ست.jpg",
+    extras: [
+     
     ],
   },
 
   {
-    id: "smoky-bbq",
+    id: "Dragon Roll ",
     category: "sushi",
     name: {
-      en: "Smoky BBQ Burger",
-      ar: "برغر باربكيو مدخن"
+      en: "Dragon Roll",
+      ar: " رول التنين"
     },
     description: {
-      en: "Double patty, smoked BBQ sauce, onion rings, and jalapeños.",
-      ar: "قطعتا لحم، صوص باربكيو مدخن، حلقات بصل، وهالبينو."
+      en: "Tempura shrimp, carrot, and crab, topped with a layer of avocado slices, garnished with crispy panko and teriyaki sauce.",
+      ar: "جمبري تمبورا , جزر , كراب , مغطى بطبقة من شرائح الافوكادو ومزين بالبانكو وصلصة الترياكي"
     },
-    price: 39,
+    price: 40,
     image:
-      "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80",
+      "./imges/تنين رولز.jpg",
     extras: [
-      {
-        id: "extra-cheese",
-        name: {
-          en: "Extra Cheese",
-          ar: "جبنة إضافية"
-        },
-        price: 4
-      },
-      {
-        id: "extra-patty",
-        name: {
-          en: "Extra Patty",
-          ar: "قطعة لحم إضافية"
-        },
-        price: 12
-      },
+     
+    ],
+  },
+    {
+    id: "Rainbow Roll ",
+    category: "sushi",
+    name: {
+      en: "Rainbow Roll ",
+      ar: "رينبو رول"
+    },
+    description: {
+      en: "Tempura shrimp, cucumber, and avocado, topped with slices of salmon and tuna, with added lemon slices.",
+      ar: "جمبري تمبورا , خيار , افوكادو , مغطى بشرائح السلمون والتونا مع اضافة شرائح الليمون "
+    },
+    price: 45,
+    image:
+      "./imges/رينبو رولز.jpg",
+    extras: [
+     
+    ],
+  },
+
+   {
+    id: "Volcano Roll ",
+    category: "sushi",
+    name: {
+      en: "Volcano Roll  ",
+      ar: "فولكانو رول"
+    },
+    description: {
+      en: "Shrimp, Philadelphia cheese, tuna, green onion, cucumber, and avocado, topped with a layer of smoked salmon and teriyaki sauce.",
+      ar: "جمبري , جبنة فيلاديلفيا , تونا , بصل اخضر , خيار , افوكادو , مغطى بطبقة من السلمون المدخن وصلصة الترياكي"
+    },
+    price: 50,
+    image:
+      "./imges/فولكانو رولز.jpg",
+    extras: [
+     
+    ],
+  },
+
+
+  {
+    id: "Salmon Grilled Roll ",
+    category: "sushi",
+    name: {
+      en: "Salmon Grilled Roll",
+      ar: "رول السلمون المشوي"
+    },
+    description: {
+      en: "Tempura sweet potato, avocado, and cucumber, topped with grilled salmon slices and teriyaki sauce, garnished with nuts and green onion.",
+      ar: "بطاطا حلوة بالتمبورا , افوكادو , خيار , مغطى بشرائح السلمون المشوية والترياكي ومزين بالمكسرات والبصل الاخضر"
+    },
+    price: 45,
+    image:
+      "./imges/سلمون مشوي رولز.jpg",
+    extras: [
+     
+    ],
+  },
+
+    {
+    id: "Dynamite Shrimp Roll ",
+    category: "sushi",
+    name: {
+      en: "Dynamite Shrimp Roll ",
+      ar: "رول الجمبري الدايناميت"
+    },
+    description: {
+      en: "Tempura shrimp, cucumber, and avocado, topped with slices of salmon and tuna, with added lemon slices.",
+      ar: "بطاطا مقلية , افوكادو , جزر , مزين بقطع جمبري متبلة بصوص الداينمايت"
+    },
+    price: 50,
+    image:
+      "./imges/شريمب رولز.jpg",
+    extras: [
+     
+    ],
+  },
+
+
+
+
+
+
+
+  //Rolls 
+ 
+{
+    id: "Shrimp Roll ",
+    category: "sushi",
+    name: {
+      en: "Shrimp Roll ",
+      ar: "رول الجمبري"
+    },
+    description: {
+      en: "Cooked shrimp, carrot, and cucumber, topped with a layer of crispy tempura.",
+      ar: "جمبري مطبوخ , جزر , خيار , مغطى بطبقة من التمبورا المقرمشة"
+    },
+    price: 30,
+    image:
+      "./imges/شريمب رول.jpg",
+    extras: [
+     
+    ],
+  },
+
+  
+
+  {
+    id: "Spicy Salmon ",
+    category: "sushi",
+    name: {
+      en: "Spicy Salmon ",
+      ar: "سالمون حار"
+    },
+    description: {
+      en: "Spicy salmon seasoning, avocado, cucumber, and crispy panko.",
+      ar: "تتبيلة السلمون الحار , افوكادو , خيار , بانكو مقرمش"
+    },
+    price: 35,
+    image:
+      "./imges/سلمون رولز.jpg",
+    extras: [
+     
+    ],
+  },
+
+  
+   {
+    id: "Philadelphia Maki ",
+    category: "sushi",
+    name: {
+      en: "Philadelphia Maki ",
+      ar: "فيلادلفيا ماكي"
+    },
+    description: {
+      en: "Philadelphia cheese, tempura salmon, and cucumber.",
+      ar: "جبنة فلدلفيا , سلمون تمبورا , خيار "
+    },
+    price: 35,
+    image:
+      "./imges/رولز1.jpg",
+    extras: [
+     
+    ],
+  },
+  {
+    id: "Kani Maki ",
+    category: "sushi",
+    name: {
+      en: "Kani Maki ",
+      ar: "كاني ماكي"
+    },
+    description: {
+      en: "Crab, avocado, cucumber, and carrot, topped with a layer of crispy tempura.",
+      ar: "كراب , افوكادو , خيار , جزر , مغطى بطبقة من التمبورا المقرمشة"
+    },
+    price: 25,
+    image:
+      "./imges/كاني ماكي.jpg",
+    extras: [
+     
+    ],
+  },
+
+   {
+    id: "Your Own",
+    category: "sushi",
+    name: {
+      en: "Your Own ",
+      ar: "اصنع الرول الخاص بك "
+    },
+    description: {
+      en: "Choose one type of fish and three types of vegetables, served with crispy panko.",
+      ar: "اختيار نوع واحد من الاسماك وثلاث انواع من الخضراوات تقدم مع البانكو المقرمش"
+    },
+    price: 35,
+    image:
+      "./imges/خاصة.jpg",
+    extras: [
+     
+    ],
+  },
+
+   {
+    id: "Salmon Tempura",
+    category: "sushi",
+    name: {
+      en: "Salmon Tempura",
+      ar: "سلمون تمبورا"
+    },
+    description: {
+      en: "Tempura salmon, sweet potato, and tempura cucumber, served with crispy panko.",
+      ar: "سلمون تمبورا , بطاطا حلوة , تمبورا خيار , تقدم مع البانكو المقرمش"
+    },
+    price: 35,
+    image:
+      "./imges/تمبورا.jpg",
+    extras: [
+     
+    ],
+  },
+
+  
+   {
+    id: "Salmon Maki",
+    category: "sushi",
+    name: {
+      en: "Salmon Maki",
+      ar: "سلمون ماكي"
+    },
+    description: {
+      en: "Salmon, avocado, and cucumber, served with crispy panko.",
+      ar: "سلمون , افوكادو , خيار , تقدم مع البانكو المقرمش"
+    },
+    price: 35,
+    image:
+      "./imges/سلمون ماكي.jpg",
+    extras: [
+     
     ],
   },
 
   {
-    id: "mushroom-swiss",
+    id: "Spicy Tuna ",
     category: "sushi",
     name: {
-      en: "Mushroom Swiss",
-      ar: "مشروم سويس"
+      en: "Spicy Tuna ",
+      ar: "تونا حارة"
     },
     description: {
-      en: "Sautéed mushrooms, Swiss cheese, and garlic aioli.",
-      ar: "مشروم سوتيه، جبنة سويسرية، وصوص أيولي بالثوم."
+      en: "Spicy tuna seasoning, avocado, cucumber, and crispy panko.",
+      ar: "تتبيلة التونا الحارة , افوكادو , خيار , بانكو مقرمش"
     },
-    price: 34,
+    price: 35,
     image:
-      "https://images.unsplash.com/photo-1572802419224-296b0aeee0df?w=600&q=80",
+      "./imges/تونا رول.jpg",
     extras: [
-      {
-        id: "extra-cheese",
-        name: {
-          en: "Extra Cheese",
-          ar: "جبنة إضافية"
-        },
-        price: 4
-      },
-      {
-        id: "bacon",
-        name: {
-          en: "Crispy Bacon",
-          ar: "بيكون مقرمش"
-        },
-        price: 6
-      },
+     
     ],
   },
 
   {
-    id: "veggie-delight",
+    id: "Own Fried Roll",
     category: "sushi",
     name: {
-      en: "Veggie Delight",
-      ar: "برغر الخضار"
+      en: "Make Your Own Fried Roll",
+      ar: "اصنع طبقك الخاص"
     },
     description: {
-      en: "Grilled portobello, avocado, arugula, and tahini dressing.",
-      ar: "فطر بورتوبيلو مشوي، أفوكادو، جرجير، وصوص طحينة."
+      en: "Choose one type of fish and three types of vegetables, deep-fried. Served as 10 pieces.",
+      ar: "اختيار نوع واحد من الاسماك وثلاث انواع من الخضراوات يقدم مقلي 10 قطع "
     },
-    price: 32,
+    price: 40,
     image:
-      "https://images.unsplash.com/photo-1520072959219-cbf346866e39?w=600&q=80",
+      "./imges/صحن.jpg",
     extras: [
-      {
-        id: "extra-avocado",
-        name: {
-          en: "Extra Avocado",
-          ar: "أفوكادو إضافي"
-        },
-        price: 5
-      }
+     
     ],
   },
+
+
+  // COMBOS samurai
+  {
+    id: "Vegetable Maki",
+    category: "samurai",
+    name: {
+      en: "Vegetable Maki",
+      ar: " ماكي الخضار"
+    },
+    description: {
+      en: "Choose one type of vegetable: cucumber, carrot, avocado, green onion, sweet potato, tempura, shiitake mushrooms, or Japanese pickled oshinko.",
+      ar: "اختيار نوع واحد من الخضار ( خيار , جزر , افوكادو , بصل اخضر , بطاطا حلوة , تمبورا , فطر شيتاكي , اوشينكو مخلل ياباني ) "
+    },
+    price: 15,
+    image:
+      "./imges/ماكي خضار.jpg",
+    extras: [],
+  },
+
+   {
+    id: "Sandwish",
+    category: "samurai",
+    name: {
+      en: "Sandwish",
+      ar: "ساندويشات"
+    },
+    description: {
+      en: "Folded nori seaweed with Japanese rice, with your choice of one type of fish and two types of vegetables.",
+      ar: "ورق النوري المطبق مع الرز الياباني مع اختيار نوع واحد من الاسماك ونوعين من الخضراوات "
+    },
+    price: 40,
+    image:
+      "./imges/ساندويش.jpg",
+    extras: [],
+  },
+
+  {
+    id: "Conus Roll",
+    category: "samurai",
+    name: {
+      en: "Conus Roll",
+      ar: "رول كونوس"
+    },
+    description: {
+      en: "A sheet of seaweed wrapped into a cone, filled with rice and your choice of ingredients — fish and two types of vegetables.",
+      ar: "ورقة طحالب  ملفوفة على شكل مخروط بداخلها ارز ومكونات يمكن اختيارها - سمك وخضراوات ( نوعان ) "
+    },
+    price: 20,
+    image:
+      "./imges/باقة.jpg",
+    extras: [],
+  },
+
+   {
+    id: "Sashimi",
+    category: "samurai",
+    name: {
+      en: "Sashimi",
+      ar: "ساشيمي"
+    },
+    description: {
+      en: "Slices of raw salmon.",
+      ar: "شرائح من السلمون الني"
+    },
+    price: 25,
+    image:
+      "./imges/شرائح سلمون.jpg",
+    extras: [],
+  },
+
+   {
+    id: "Nigiri",
+    category: "samurai",
+    name: {
+      en: "Nigiri",
+      ar: "نيجيري"
+    },
+    description: {
+      en: "Salmon Nigiri (2 pieces)",
+      ar: "نيجري سلمون ( قطعتين ) "
+    },
+    price: 15,
+    image:
+      "./imges/نيجري.jpg",
+    extras: [],
+  },
+
+ 
+
+  {
+    id: "Fish Maki",
+    category: "samurai",
+    name: {
+      en: "Fish Maki",
+      ar: "فيش ماكي"
+    },
+    description: {
+      en: "Choose one type of fish: salmon, tempura salmon, spicy salmon, smoked salmon, red tuna, spicy tuna, shrimp, tempura shrimp, or crab.",
+      ar: "اختيار نوع واحد من الاسماك ( سلمون , سلمون تمبورا , سلمون حار , سلمون مدخن , تونا حمرا , تونا حارة , جمبري , تمبورا , كراب ) "
+    },
+    price: 20,
+    image:
+      "./imges/فيش ماكي.jpg",
+    extras: [],
+  },
+
+   {
+    id: "Mixed Roll ",
+    category: "samurai",
+    name: {
+      en: "Mixed Roll",
+      ar: " رول مشكل"
+    },
+    description: {
+      en: "Large platter – 9 rolls.",
+      ar: "صينية حجم كبير 9 رولات "
+    },
+    price: 350,
+    image:
+      "./imges/صينية 9 رولات.jpg",
+    extras: [
+       {
+        id: "small size",
+        name: {
+          en: "Small size",
+          ar: "حجم صغير"
+        },
+        price: -120
+      },
+    ],
+  },
+
+
+   {
+    id: "Sushi Roll Boat",
+    category: "samurai",
+    name: {
+      en: "Sushi Roll Boat",
+      ar: "سفينة من الرولز "
+    },
+    description: {
+      en: "Three-Roll Boat",
+      ar: "سفينة ثلاث رولات "
+    },
+    price: 350,
+    image:
+      "./imges/سفينة رولز.jpg",
+    extras: [],
+  },
+
+    
+
+
+
 
   // Burgers
   {
@@ -1079,58 +1582,25 @@ const MENU_ITEMS = [
     price: 30,
     image:
       "./imges/شوربة فطر.jpeg",
-    extras: [
-      {
-        id: "extra-ice-cream",
-        name: {
-          en: "Extra Ice Cream",
-          ar: "آيس كريم إضافي"
-        },
-        price: 5
-      }
-    ],
+    extras: [ ],
   },
 
   {
-    id: "cheesecake",
-    category: "desserts",
+    id: "Tom Yam",
+    category: "soup",
     name: {
-      en: "NY Cheesecake",
-      ar: "تشيزكيك نيويورك"
+      en: "Tom Yam",
+      ar: "شوربة توم يام "
     },
     description: {
-      en: "Classic creamy cheesecake with berry compote.",
-      ar: "تشيزكيك كريمي كلاسيكي مع صوص التوت."
+      en: "Bell peppers, mushrooms, cherry tomatoes, shrimp, and seafood, cooked in a spicy Tom Yum sauce with coconut milk.",
+      ar: "فلفل ملون , فطر , طماطم كرزية , جمبري , فواكه البحر , مطبوخة مع صلصة توم يام الحارة وحليب جوز الهند "
     },
-    price: 24,
+    price: 30,
     image:
-      "https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=600&q=80",
-    extras: [],
+      "./imges/توم يام.jpg",
+    extras: [ ],
   },
-
-  {
-    id: "churros",
-    category: "desserts",
-    name: {
-      en: "Churros",
-      ar: "تشوروز"
-    },
-    description: {
-      en: "Cinnamon sugar churros with chocolate dip.",
-      ar: "تشوروز بالسكر والقرفة مع صوص الشوكولاتة."
-    },
-    price: 18,
-    image:
-      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&q=80",
-    extras: [
-      {
-        id: "extra-dip",
-        name: {
-          en: "Extra Chocolate Dip",
-          ar: "صوص شوكولاتة إضافي"
-        },
-        price: 4
-      }
-    ],
-  },
+  
+ 
 ];
