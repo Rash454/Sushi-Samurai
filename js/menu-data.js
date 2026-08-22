@@ -117,7 +117,7 @@ const MENU_ITEMS = [
     },
     description: {
       en: "Sweet potato, carrots, cucumber, and enoki mushrooms, topped with avocado slices and crispy sweet potato.",
-      ar: "بطاطا حلوة , جزر , خيار , اوشنكوة, مغطى بشرائح الافوكادو والبطاطا الحلوة المقرمشة"
+      ar: "بطاطا حلوة , جزر , خيار , اوشنكو, مغطى بشرائح الافوكادو والبطاطا الحلوة المقرمشة"
     },
     price: 30,
     image:
