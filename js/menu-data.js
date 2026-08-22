@@ -488,7 +488,7 @@ const MENU_ITEMS = [
     },
     description: {
       en: "Choose one type of fish and three types of vegetables, deep-fried. Served as 10 pieces.",
-      ar: "اختيار نوع واحد من الاسماك وثلاث انواع من الخضراوات يقدم مقلي 10 قطع "
+      ar: "اختيار نوع واحد من الاسماك وثلاث انواع من الخضراوات يقدم مقلي 8 قطع "
     },
     price: 40,
     image:
@@ -642,7 +642,7 @@ const MENU_ITEMS = [
       en: "Three-Roll Boat",
       ar: "سفينة ثلاث رولات "
     },
-    price: 350,
+    price: 110,
     image:
       "./imges/سفينة رولز.jpg",
     extras: [],
