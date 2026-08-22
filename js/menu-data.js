@@ -28,7 +28,7 @@ const MENU_ITEMS = [
     },
     price: 50,
     image:
-      "./imges/سوشي سموراي.jpg",
+      "./imges/سام.jpeg",
     extras: [
      
     ],
@@ -46,7 +46,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/سوشي ليون.jpg",
+      "./imges/ليون.jpeg",
     extras: [
      
     ],
@@ -65,7 +65,7 @@ const MENU_ITEMS = [
     },
     price: 45,
     image:
-      "./imges/سوشي سالمون.jpg",
+      "./imges/سالمون.jpeg",
     extras: [
      
     ],
@@ -83,7 +83,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/سوشي كليفورنيا.jpg",
+      "./imges/كاليف.jpeg",
     extras: [
      
     ],
@@ -102,7 +102,7 @@ const MENU_ITEMS = [
     },
     price: 45,
     image:
-      "./imges/سوشي تونا.jpg",
+      "./imges/تونا..jpeg",
     extras: [
      
     ],
@@ -121,7 +121,7 @@ const MENU_ITEMS = [
     },
     price: 30,
     image:
-      "./imges/سوشي فجي.jpg",
+      "./imges/خضار.jpeg",
     extras: [
      
     ],
@@ -140,7 +140,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/هلبينو رول.jpg",
+      "./imges/هالبينو.jpeg",
     extras: [
      
     ],
@@ -159,7 +159,7 @@ const MENU_ITEMS = [
     },
     price: 45,
     image:
-      "./imges/سلمون مدخن.jpg",
+      "./imges/سالمون مدخن.jpeg",
     extras: [
      
     ],
@@ -177,7 +177,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/شكن رولز.jpg",
+      "./imges/دجاج وجبنة.jpeg",
     extras: [
      
     ],
@@ -196,7 +196,7 @@ const MENU_ITEMS = [
     },
     price: 45,
     image:
-      "./imges/كراب رولز.jpg",
+      "./imges/كراب.jpeg",
     extras: [
      
     ],
@@ -215,7 +215,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/سن ست.jpg",
+      "./imges/سن ست رول.jpeg",
     extras: [
      
     ],
@@ -234,7 +234,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/تنين رولز.jpg",
+      "./imges/رول التنين.jpeg",
     extras: [
      
     ],
@@ -252,7 +252,7 @@ const MENU_ITEMS = [
     },
     price: 45,
     image:
-      "./imges/رينبو رولز.jpg",
+      "./imges/رينبو.jpeg",
     extras: [
      
     ],
@@ -271,7 +271,7 @@ const MENU_ITEMS = [
     },
     price: 50,
     image:
-      "./imges/فولكانو رولز.jpg",
+      "./imges/فولكا.jpeg",
     extras: [
      
     ],
@@ -291,7 +291,7 @@ const MENU_ITEMS = [
     },
     price: 45,
     image:
-      "./imges/سلمون مشوي رولز.jpg",
+      "./imges/سالمون مشوي.jpeg",
     extras: [
      
     ],
@@ -310,7 +310,7 @@ const MENU_ITEMS = [
     },
     price: 50,
     image:
-      "./imges/شريمب رولز.jpg",
+      "./imges/ديناميت.jpeg",
     extras: [
      
     ],
