@@ -46,7 +46,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/ليون.jpeg",
+      "./imges/ليون جديد.png",
     extras: [
      
     ],
@@ -138,7 +138,7 @@ const MENU_ITEMS = [
       en: "Tempura salmon, green onion, and avocado, topped with spicy tuna seasoning, garnished with jalapeño and crispy panko.",
       ar: "سلمون تمبورا , بصل اخضر , افوكادو , مغطى بتتبيلة التونا الحارة , مزين بالهالبينو والبانكو المقرمش"
     },
-    price: 40,
+    price: 50,
     image:
       "./imges/هالبينو.jpeg",
     extras: [
@@ -266,8 +266,8 @@ const MENU_ITEMS = [
       ar: "فولكانو رول"
     },
     description: {
-      en: "Shrimp, Philadelphia cheese, tuna, green onion, cucumber, and avocado, topped with a layer of smoked salmon and teriyaki sauce.",
-      ar: "جمبري , جبنة فيلاديلفيا , تونا , بصل اخضر , خيار , افوكادو , مغطى بطبقة من السلمون المدخن وصلصة الترياكي"
+      en: "Tuna, shrimp, sweet potato, cucumber, avocado, topped with cheese and spicy sauce.",
+      ar: "تونا , جمبري , بطاطا حلوة , خيار , افوكادو , مغطى بصوص الجبنة والسبايسي "
     },
     price: 50,
     image:
@@ -277,6 +277,25 @@ const MENU_ITEMS = [
     ],
   },
 
+  {
+    id: "Crazy Roll ",
+    category: "sushi",
+    name: {
+      en: "Crazy Roll",
+      ar: "كريزي رول"
+    },
+    description: {
+      en: "Crab, sweet potato, carrot, cucumber, avocado, topped with crab sauce and spicy hot sauce.",
+      ar: "كراب , بطاطا حلوة , جزر , خيار , افوكادو , مغطى بصلصة الكراب والسبايسي الحار "
+    },
+    price: 45,
+    image:
+      "./imges/crazy.jpeg",
+    extras: [
+     
+    ],
+  },
+ 
 
   {
     id: "Salmon Grilled Roll ",
@@ -297,6 +316,68 @@ const MENU_ITEMS = [
     ],
   },
 
+  
+  {
+    id: "Crispy Sushi Sandwich ",
+    category: "sushi",
+    name: {
+      en: "Crispy Sushi Sandwich",
+      ar: "سوشي ساندويش كرسبي"
+    },
+    description: {
+      en: "Contains rice, sweet potato, and avocado.",
+      ar: "يحتوي على الارز والبطاطا الحلوة والافوكادو"
+    },
+    price: 30,
+    image:
+      "./imges/ساندويش كرسبي.jpeg",
+    extras: [
+     {
+        id: "extra-crab",
+        name: {
+          en: "Extra Crab",
+          ar: "كراب  "
+        },
+        price: 35
+      },
+    
+     {
+        id: "extra-chicken",
+        name: {
+          en: "Extra Chicken",
+          ar: "دجاج  "
+        },
+        price: 35
+      },
+
+      {
+        id: "extra-salmon",
+        name: {
+          en: "Extra Salmon",
+          ar: "سلمون  "
+        },
+        price: 40
+      },
+
+        {
+        id: "extra-shrimps",
+        name: {
+          en: "Extra Shrimps",
+          ar: "جمبري  "
+        },
+        price: 45
+        },
+
+       {
+        id: "extra-tuna",
+        name: {
+          en: "Extra Tuna",
+          ar: "تونا  "
+        },
+        price: 50
+        },
+    ],
+  },
     {
     id: "Dynamite Shrimp Roll ",
     category: "sushi",
@@ -619,14 +700,25 @@ const MENU_ITEMS = [
     image:
       "./imges/صينية 9 رولات.jpg",
     extras: [
-       {
-        id: "small size",
-        name: {
-          en: "Small size",
-          ar: "حجم صغير"
-        },
-        price: -120
-      },
+    ],
+  },
+
+  
+   {
+    id: "Mixed Roll2 ",
+    category: "samurai",
+    name: {
+      en: "Mixed Roll",
+      ar: " رول مشكل"
+    },
+    description: {
+      en: "Small platter – 6 rolls.",
+      ar: "صينية حجم صغير 6 رولات "
+    },
+    price: 230,
+    image:
+      "./imges/صينية 9 رولات.jpg",
+    extras: [
     ],
   },
 
@@ -753,7 +845,7 @@ const MENU_ITEMS = [
     },
     price: 40,
     image:
-      "./imges/كتسا.jfif",
+      "./imges/كلاسيك برغر.jfif",
    extras: [
       {
         id: "extra-cheese",
@@ -1120,11 +1212,11 @@ const MENU_ITEMS = [
     },
     description: {
       en: "Noodles, rice, cabbage, onion, carrot, bell pepper, mushrooms, garlic, ginger.",
-      ar: "نودلز , رز , ملفوف , بصل , جزر , فلفل حلو , فطر , ثوم , زنجبيل "
+      ar: "نودلز رز , ملفوف , بصل , جزر , فلفل حلو , فطر , ثوم , زنجبيل "
     },
     price: 20,
     image:
-      "./imges/بتاي.jfif",
+      "./imges/بتاي.jpeg",
     extras: [
       {
         id: "extra-chicken",
