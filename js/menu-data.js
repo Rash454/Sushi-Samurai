@@ -10,6 +10,7 @@ const MENU_CATEGORIES = [
   { id: "Snacks", name: { en: "Snacks", ar: "مقبلات" }, icon: "" },
   { id: "soup", name: { en: "Soup", ar: "شوربات" }, icon: "" },
   { id: "salads", name: { en: "Salads", ar: "سلطات" }, icon: "" },
+  { id: "sandwich", name: { en: "Sandwich", ar: "سندويشات" }, icon: "" },
 
 ];
 
@@ -740,8 +741,108 @@ const MENU_ITEMS = [
     extras: [],
   },
 
-    
+  // sandwich
+     {
+    id: "Chicken Fajita",
+    category: "sandwich",
+    name: {
+      en: "Chicken Fajita Sandwich",
+      ar: "فاهيتا دجاج"
+    },
+    description: {
+      en: "Baguette Bread, Chicken, bell peppers, onions, mozzarella cheese, sauce.",
+      ar: "خبز بجيت , دجاج , فلفل حلو , بصل , جبنة موزاريلا , صوص"
+    },
+    price: 20,
+    image:
+      "./imges/فاهيتا دجاج.png",
+    extras: [
+       {
+        id: "Cola",
+        name: {
+          en: "Cola",
+          ar: "كولا"
+        },
+        price: 5
+      },
+      {
+        id: "Fries",
+        name: {
+          en: "Fries",
+          ar: "بطاطا"
+        },
+        price: 5
+      },
+    ],
+  },
+ 
+     {
+    id: "Beef Fajita",
+    category: "sandwich",
+    name: {
+      en: "Beef Fajita Sandwich",
+      ar: "فاهيتا لحمة"
+    },
+    description: {
+      en: "Baguette Bread , Beef, bell peppers, onions, mozzarella cheese, sauce.",
+      ar: "خبز بجيت , لحمة , فلفل حلو , بصل , جبنة موزاريلا , صوص"
+    },
+    price: 25,
+    image:
+      "./imges/فاهيتا لحمة.png",
+    extras: [
+       {
+        id: "Cola",
+        name: {
+          en: "Cola",
+          ar: "كولا"
+        },
+        price: 5
+      },
+      {
+        id: "Fries",
+        name: {
+          en: "Fries",
+          ar: "بطاطا"
+        },
+        price: 5
+      },
+    ],
+  },
 
+     {
+    id: "Zinger Sandwich",
+    category: "sandwich",
+    name: {
+      en: "Zinger Sandwich",
+      ar: "زنجر ساندويش"
+    },
+    description: {
+      en: "Baguette Bread, Chicken, Pickles, Sauce, Lettuce,Tomato, Onion .",
+      ar: "خبز بجيت , دجاج , مخلل , صوص , خس , بندورة , بصل "
+    },
+    price: 20,
+    image:
+      "./imges/زنجر.png",
+    extras: [
+       {
+        id: "Cola",
+        name: {
+          en: "Cola",
+          ar: "كولا"
+        },
+        price: 5
+      },
+      {
+        id: "Fries",
+        name: {
+          en: "Fries",
+          ar: "بطاطا"
+        },
+        price: 5
+      },
+    ],
+  },
 
 
 

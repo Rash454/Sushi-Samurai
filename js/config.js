@@ -10,9 +10,9 @@ const RESTAURANT_CONFIG = {
 
   currency: "₪",
 
-  whatsappNumber: "972528050190",
+  whatsappNumber: "970569776025",
 
-  phone: "0528050190",
+  phone: "0569776025",
 
   instagram: "https://www.instagram.com/sushisamorai?igsi=anl1M2kzODIwc25n",
 
@@ -25,13 +25,13 @@ const RESTAURANT_CONFIG = {
 
   hours: {
     weekdays: {
-      en: "Sun–Thu: 12:00 – 23:00",
-      ar: "الأحد–الخميس: 12:00 – 23:00",
+      en: "Sun–Thu: 11:00 – 00:00",
+      ar: "الأحد–الخميس: 11:00 – 00:00",
     },
 
     weekend: {
-      en: "Fri–Sat: 12:00 – 00:00",
-      ar: "الجمعة–السبت: 12:00 – 00:00",
+      en: "Fri–Sat: 11:00 – 00:00",
+      ar: "الجمعة–السبت: 11:00 – 00:00",
     },
   },
 
